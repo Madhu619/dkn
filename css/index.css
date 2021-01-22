@@ -194,6 +194,11 @@ p {
 .row-1.section section:nth-child(2) {
     margin: 24px;
 }
+@media screen and (max-width: 1000px) {
+    .row-1.section section:nth-child(2) {
+        margin: 24px 0;
+    }
+  }
 .row-1.section a {
     color: #ee741f;
     font-size: 18px;
