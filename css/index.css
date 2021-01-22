@@ -22,7 +22,6 @@ html, body {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    height: 100vh;
 }
 .header-text {
     font-size: 20px;
@@ -134,7 +133,6 @@ p {
     justify-content: space-between;
     padding: 0 32px;
     margin-top: 32px;
-    margin-bottom: 24px;
 }
 .right-container .row-3 {
     display: flex;
@@ -179,9 +177,12 @@ p {
 .row-1.section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0;
 }
 .row-1.section section{
-    flex: 1 ;
+    flex: 1 1 368px ;
+    margin: 24px 0;
 }
 .row-1.section section > div {
     background: var(--white);
@@ -191,7 +192,7 @@ p {
     background: var(--white);
 }
 .row-1.section section:nth-child(2) {
-    margin: 0 24px;
+    margin: 24px;
 }
 .row-1.section a {
     color: #ee741f;
@@ -309,15 +310,15 @@ p {
     right:-10px;
     display:none;
     }
-    .tooltip:before{
-    z-index:1000;
-    position:absolute;
-    content:"";
-    top:15px;
-    left:0px;
-    border-right:7px transparent solid;
-    border-left:7px transparent solid;
-    display:none;
+    .tooltip:before{   
+        z-index:1000;
+        position:absolute;
+        content:"";
+        top:15px;
+        left:0px;
+        border-right:7px transparent solid;
+        border-left:7px transparent solid;
+        display:none;
     }
     .tooltip:hover{
     z-index:1000;
