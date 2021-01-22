@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukaan Dashboard</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="logo"><img src="./images/assets_logo_white.svg" alt="Dukaan logo"></div>
+            <div class="menu-list">
+                <ul>
+                    <li class="active"><span> <img src="./images/icons/icons_navbar_home_active.svg" alt="Home"></span>  Home</li>
+                    <li><span> <img src="./images/icons/icons_navbar_orders_inactive.svg" alt="Home"></span>  Orders <span class="order-count"></span></li>
+                    <li><span> <img src="./images/icons/icons_navbar_catalogue_inactive.svg" alt="Home"></span>  Products</li>
+                    <li><span> <img src="./images/icons/icons_navbar_marketing_inactive.svg" alt="Home"></span>  Marketing</li>
+                    <li><span> <img src="./images/icons/icons_navbar_account_inactive.svg" alt="Home"></span>  Account</li>
+                </ul>
+            </div>
+            <div class="chat-info">
+                <p>Need any help?</p>
+                <strong>Chat with us</strong>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="top-section">
+               <div class="left header-text">Mano Super Market <span><img src="./images/icons_verify.svg" alt="Mano Super Market"></span></div> 
+               <div class="right tooltip" href="#" tip="Need any help on how to use contact +91-9008836782"> <span class="info">?</span> How to use</div>
+            </div>
+            <div class="row row-1">
+                <div class="header-text">Share store link</div>
+                <div>
+                    <select name="time" id="time">
+                        <option value="1">Yesterday</option>
+                        <option value="">Last Week</option>
+                        <option value="3" selected>Last Month</option>
+                        <option value="">Last Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row-1 section">
+                <section>
+                    <div>
+                        <p class="label-color">Your customers can visit your online store and place the orders from this link.</p>
+                        <a href="http://www.mydukaan.io/manosupermarket" target="_blank">mydukaan.io/manosupermarket</a>
+                        <p> <strong>Share via</strong> </p>
+                        <div class="social-images">
+                            <img src="./images/social/Subtract.svg" alt="Whatsapp">
+                            <img src="./images/social/facebook.svg" alt="Facebook">
+                            <img src="./images/social/icons8-twitter_circled.svg" alt="Twitter">
+                        </div>
+                    </div>
+                </section>
+                <section class="two-row">
+                    <div>
+                        <p class="label-color">ORDERS</p>
+                        <p class="text-bolder">192</p>
+                    </div>
+                    <div>
+                        <p class="label-color">STORE VIEWS</p>
+                        <p class="text-bolder">96</p>
+                    </div>
+                </section>
+                <section class="two-row">
+                    <div>
+                        <p class="label-color">TOTAL SALES</p>
+                        <p class="text-bolder">&#x20B9; 1,55,920</p>
+                    </div>
+                    <div>
+                        <p class="label-color">PRODUCT VIEWS</p>
+                        <p class="text-bolder">2,313</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="row row-2">
+                <div class="header-text">Active Orders</div>
+                <div>
+                    <a href="#">View All ></a>
+                </div>
+            </div>
+
+            <div class="row row-3">
+                <button class="btn-default active" data-event='pending'>Pending (12)</button>
+                <button class="btn-default" data-event='accepted'>Accepted (33)</button>
+                <button class="btn-default" data-event='shipped'>Shipped (121)</button>
+            </div>
+
+            <div class="cards-wrapper" id='cards-wrapper'>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
